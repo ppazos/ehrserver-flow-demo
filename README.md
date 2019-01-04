@@ -17,3 +17,4 @@ We tried to make this as simple and developer friendly as possible, even if you 
 ## Full flow:
 
 [![Full Flow Image](images/EHRServer Flow.png)](images/EHRServer Flow.png)
+![Full Flow Image2](images/EHRServer Flow.png)
