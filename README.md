@@ -1,6 +1,6 @@
 # EHRServer Flow Demo
 
-![Full Flow Demo](images/logo_300_hor_white_1margin_0text_0square.png)
+![EHRServer](images/logo_300_hor_white_1margin_0text_0square.png)
 
 This is a step by step guide on how to use the EHRServer Clinical Data Repository, open source, compliant with the openEHR standard, for storing and querying data.
 
@@ -16,4 +16,4 @@ We tried to make this as simple and developer friendly as possible, even if you 
 
 ## Full flow:
 
-[![Full Flow ](images/EHRServer Flow.png)](images/EHRServer Flow.png)
+[![Full Flow Image](images/EHRServer Flow.png)](images/EHRServer Flow.png)
