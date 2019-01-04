@@ -10,7 +10,7 @@ We tried to make this as simple and developer friendly as possible, even if you 
 
 ## Watch the demo here:
 
-<div style="text-align:center">
+<div align="center">
 [![Full Flow Demo](https://img.youtube.com/vi/zSftiFBjboE/0.jpg)][1]
 </div>
 
