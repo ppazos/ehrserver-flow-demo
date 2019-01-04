@@ -1,0 +1,223 @@
+archetype (adl_version=1.4)
+	openEHR-EHR-OBSERVATION.physical_activity_record.v1
+
+concept
+	[at0000]	-- Physical activity record
+language
+	original_language = <[ISO_639-1::es]>
+	translations = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			author = <
+				["name"] = <"?">
+			>
+		>
+	>
+description
+	original_author = <
+		["name"] = <"">
+	>
+	details = <
+		["es"] = <
+			language = <[ISO_639-1::es]>
+			purpose = <"">
+			use = <"">
+			misuse = <"">
+			copyright = <"">
+		>
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			purpose = <"*(es)">
+			use = <"*(es)">
+			misuse = <"*(es)">
+			copyright = <"*(es)">
+		>
+	>
+	lifecycle_state = <"0">
+	other_contributors = <>
+	other_details = <
+		["MD5-CAM-1.0.1"] = <"136D01981C756D0CB43AD9C13CA560DE">
+	>
+
+definition
+	OBSERVATION[at0000] matches {	-- Physical activity record
+		data matches {
+			HISTORY[at0001] matches {	-- Event Series
+				events cardinality matches {1..*; unordered} matches {
+					EVENT[at0002] occurrences matches {0..1} matches {	-- Event
+						data matches {
+							ITEM_TREE[at0003] matches {	-- Tree
+								items cardinality matches {0..*; unordered} matches {
+									ELEMENT[at0004] occurrences matches {0..1} matches {	-- Type of exercise
+										value matches {
+											DV_CODED_TEXT matches {
+												defining_code matches {
+													[local::
+													at0005, 	-- walking
+													at0006, 	-- running
+													at0007, 	-- swimming
+													at0008, 	-- biking
+													at0009]	-- skateboarding
+												}
+											}
+										}
+									}
+									ELEMENT[at0010] occurrences matches {0..1} matches {	-- Calorie consumption
+										value matches {
+											C_DV_QUANTITY <
+												property = <[openehr::121]>
+												list = <
+													["1"] = <
+														units = <"cal">
+													>
+													["2"] = <
+														units = <"kcal">
+													>
+												>
+											>
+										}
+									}
+									ELEMENT[at0011] occurrences matches {0..1} matches {	-- Duration
+										value matches {
+											C_DV_QUANTITY <
+												property = <[openehr::128]>
+												list = <
+													["1"] = <
+														units = <"min">
+													>
+													["2"] = <
+														units = <"h">
+													>
+												>
+											>
+										}
+									}
+									ELEMENT[at0012] occurrences matches {0..1} matches {	-- Comment
+										value matches {
+											DV_TEXT matches {*}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["es"] = <
+			items = <
+				["at0000"] = <
+					text = <"Physical activity record">
+					description = <"unknown">
+				>
+				["at0001"] = <
+					text = <"Event Series">
+					description = <"@ internal @">
+				>
+				["at0002"] = <
+					text = <"Cualquier evento">
+					description = <"*">
+				>
+				["at0003"] = <
+					text = <"Arbol">
+					description = <"@ internal @">
+				>
+				["at0004"] = <
+					text = <"Type of exercise">
+					description = <"*">
+				>
+				["at0005"] = <
+					text = <"*walk(es)">
+					description = <"**(es)">
+				>
+				["at0006"] = <
+					text = <"*running(es)">
+					description = <"**(es)">
+				>
+				["at0007"] = <
+					text = <"*swimming(es)">
+					description = <"**(es)">
+				>
+				["at0008"] = <
+					text = <"*biking(es)">
+					description = <"**(es)">
+				>
+				["at0009"] = <
+					text = <"*skateboarding(es)">
+					description = <"**(es)">
+				>
+				["at0010"] = <
+					text = <"*Nuevo elemento(es)">
+					description = <"**(es)">
+				>
+				["at0011"] = <
+					text = <"*Nuevo elemento(es)">
+					description = <"**(es)">
+				>
+				["at0012"] = <
+					text = <"*Nuevo elemento(es)">
+					description = <"**(es)">
+				>
+			>
+		>
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"Physical activity record">
+					description = <"*unknown(es)">
+				>
+				["at0001"] = <
+					text = <"Event Series">
+					description = <"*@ internal @(es)">
+				>
+				["at0002"] = <
+					text = <"Event">
+					description = <"**(es)">
+				>
+				["at0003"] = <
+					text = <"Tree">
+					description = <"*@ internal @(es)">
+				>
+				["at0004"] = <
+					text = <"Type of exercise">
+					description = <"*">
+				>
+				["at0005"] = <
+					text = <"walking">
+					description = <"*">
+				>
+				["at0006"] = <
+					text = <"running">
+					description = <"*">
+				>
+				["at0007"] = <
+					text = <"swimming">
+					description = <"*">
+				>
+				["at0008"] = <
+					text = <"biking">
+					description = <"*">
+				>
+				["at0009"] = <
+					text = <"skateboarding">
+					description = <"*">
+				>
+				["at0010"] = <
+					text = <"Calorie consumption">
+					description = <"*">
+				>
+				["at0011"] = <
+					text = <"Duration">
+					description = <"*">
+				>
+				["at0012"] = <
+					text = <"Comment">
+					description = <"*">
+				>
+			>
+		>
+	>
