@@ -8,5 +8,12 @@ This is a step by step guide on how to use the EHRServer Clinical Data Repositor
 
 We tried to make this as simple and developer friendly as possible, even if you don't know much about the openEHR standard, you can still use it and say "my app is openEHR compliant".
 
-Watch the demo here:
+## Watch the demo here:
+
+<div style="text-align:center">
 [![Full Flow Demo](https://img.youtube.com/vi/zSftiFBjboE/0.jpg)](https://www.youtube.com/watch?v=zSftiFBjboE)
+</div>
+
+## Full flow:
+
+[![Full Flow ](images/EHRServer Flow.png)](images/EHRServer Flow.png)
