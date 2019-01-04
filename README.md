@@ -11,14 +11,9 @@ We tried to make this as simple and developer friendly as possible, even if you 
 ## Watch the demo here:
 
 <div align="center">
-[![Full Flow Demo](https://img.youtube.com/vi/zSftiFBjboE/0.jpg)][1]
+[![Full Flow Demo](https://img.youtube.com/vi/zSftiFBjboE/0.jpg)](https://www.youtube.com/watch?v=zSftiFBjboE)
 </div>
 
 ## Full flow:
 
-
-[![Full Flow Image](images/EHRServer Flow.png?raw=true)][2]
-
-
-[1]: https://www.youtube.com/watch?v=zSftiFBjboE
-[2]: images/EHRServer Flow.png
+![Full Flow Image](images/EHRServer Flow.png)
