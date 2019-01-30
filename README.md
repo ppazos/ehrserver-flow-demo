@@ -2,9 +2,8 @@
 
 ![EHRServer](images/logo_300_hor_white_1margin_0text_0square.png)
 
-This is a step by step guide on how to use the EHRServer Clinical Data Repository, open source, compliant with the openEHR standard, for storing and querying data.
+Most developers, new to the openEHR specifications and methodology, find a painful path from having the need of using an openEHR CDR to actually using one effectively to store and retrieve openEHR data. Considering this, I have created a step by step guide as a video, that includes every single step a developer should follow to be able to define, commit and query clinical data from the EHRServer, the first openEHR-cimpliant open source CDR.
 
-This is a step by step guide on how to use the EHRServer Clinical Data Repository, open source, compliant with the openEHR standard, for storing and querying data. Many people asked me about having this step y step guide and here we are.
 
 We tried to make this as simple and developer friendly as possible, even if you don't know much about the openEHR standard, you can still use it and say "my app is openEHR compliant".
 
